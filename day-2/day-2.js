@@ -126,7 +126,8 @@ console.log(Math.round("9.8") === 10);
 console.log(parseInt("9.8") == 10 - 1);
 
 // Q/N 5.
-let lang_1 = "python", lang_2 = "jargon";
+let lang_1 = "python",
+  lang_2 = "jargon";
 console.log(lang_1.includes("on"));
 console.log(lang_2.includes("on"));
 console.log(/on/gi.test(lang_1) && /on/gi.test(lang_2));
@@ -180,25 +181,41 @@ console.log(
   )
 );
 
-// // Exercise Level: 3
-// // Q/N 1.
-// let sentence_1 =
-//   "Love is the best thing in this world. Some found their love and some are still looking for their love.";
-// console.log(sentence_1.match(/love/gi).length);
-// // Q/N 1.
+// Exercise Level: 3
+// Q/N 1.
+let sentence_1 =
+  "Love is the best thing in this world. Some found their love and some are still looking for their love.";
+console.log(sentence_1.match(/love/gi).length);
 
-// let sentence_2 =
-//   "You cannot end a sentence with because because because is a conjunction.";
-// console.log(sentence_2.match(/because/gi).length);
+// Q/N 2.
+let sentence_2 =
+  "You cannot end a sentence with because because because is a conjunction.";
+console.log(sentence_2.match(/because/gi).length);
 
+// // Q/N 3.
 // let sentence_3 =
 //   "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
 // let cleanSentence = sentence_3.replace(/[^A-Za-z0-9,.?' ']/gim, "");
 // console.log(cleanSentence);
 
+// let elI = cleanSentence.replace(/i/gi, '')
+
 // const mostWords = (sentence) => {
 //   const words = sentence.split(" ");
-//   const word = words.filter((each, i) => console.log(each[i]))
-//   console.log(words);
+//   const word = words.filter((each, i) => console.log(each[i]));
+//   //   console.log(words);
+//   let resultCount = 0;
+//   let result = "";
+
+//   for (let i in word) {
+//     let count = 0;
+//     for (let j in words) if (words[j] == word[i]) count++;
+//     if (resultCount < count) {
+//       resultCount = count;
+//       result = word[i];
+//     }
+//   }
+//   return result;
 // };
-// mostWords(cleanSentence);
+// console.log(mostWords(cleanSentence));
+// console.log(mostWords(elI));
