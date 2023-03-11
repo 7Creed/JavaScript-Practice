@@ -98,7 +98,7 @@ console.log(today.getFullYear());
 
 // Exercise Level: 2
 // Q/N 1.
-
+/*
 let base = prompt("Enter base:");
 let height = prompt("Enter height:");
 
@@ -134,7 +134,7 @@ console.log(
   `Area of cicle: ${areaCircle} & `,
   `Circumference of circle: ${circumference}`
 );
-
+*/
 
 // Q/N 5.
 // y = 2x - 2
@@ -196,20 +196,20 @@ operation1 === operation2
 // This is a simple example. you could use regex to make it super complex to get the values of a, b, c instead of hand coding them.
 
 // Q/N 9.
-
+/*
 let hours = prompt("Enter hours: ");
 let ratePerHour = prompt("Enter rate per hour: ");
 let pay = parseFloat(hours) * parseFloat(ratePerHour);
 console.log(`Your pay is $${pay}`);
-
+*/
 
 // Q/N 10.
-
+/*
 let yourName = prompt("Enter your name: ");
 yourName.length > 7
   ? console.log("your name is long")
   : console.log("your name is short");
-
+*/
 
 // if(name.length > 7){
 //   console.log('your name is long');
@@ -250,17 +250,17 @@ if (myAge_1 > yourAge_1) {
 }
 
 // Q/N 13.
-
+/*
 let birthYear = parseFloat(prompt("Enter birth year: "));
 
 let newYear = new Date().getFullYear();
 newYear - birthYear >= 18
   ? console.log(`You are ${newYear - birthYear}. You are old enough to drive`)
   : console.log(`You are ${newYear - birthYear}. You will be allowed to drive after ${18 - (newYear - birthYear)} years.`);
-
+*/
 
 // Q/N 14.
-
+/*
 let age_4 = parseFloat(prompt("Enter your age: "));
 let age_4InSecs = age_4 * 365 * 24 * 60 * 60;
 let noOfYears = 100 - age_4;
@@ -268,7 +268,7 @@ let noOfYearsInSecs = parseFloat(noOfYears) * 365 * 24 * 60 * 60;
 console.log(
   `You have lived ${age_4InSecs} secs. \n You have ${noOfYearsInSecs} secs remaining.`
 );
-
+*/
 
 // Q/N 15.
 

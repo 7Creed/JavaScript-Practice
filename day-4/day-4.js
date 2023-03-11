@@ -1,6 +1,6 @@
 // Exercise Level: 1
 // Q/N 1.
-
+/*
 let age_5 = Number(prompt("enter age"));
 if (age_5 >= 18) {
   console.log("You are old enough to drive");
@@ -48,11 +48,11 @@ if (num_1 % 2 === 0) {
 // } else if (num % 2 !== 0) {
 //     console.log(`${num} is an odd number`)
 // }
-
+*/
 
 // Exercise Level: 2
 // Q/N 1.
-
+/*
 let score_1 = parseFloat(prompt("Enter your score: "));
 
 switch (true) {
@@ -79,11 +79,11 @@ switch (true) {
   default:
     console.log("no score assigned");
 }
-
+*/
 
 // Q/N 2.
 //seasons
-
+/*
 let month = prompt("enter month to check seasons").toLowerCase();
 switch (month) {
     case "september":
@@ -113,12 +113,12 @@ switch (month) {
     default:
         console.log("invalid Month")
 }
-
+*/
 
 // Q/N 3.
 //check weekend
 
-
+/*
 let weekDay = prompt("Enter week day: ").toLowerCase();
 if (weekDay === "saturday" || weekDay == "sunday") {
   console.log(`${weekDay} is a weekend day`);
@@ -152,7 +152,7 @@ switch (weekDay) {
   default:
     console.log("invalid Month");
 }
-
+*/
 
 // Exercise Level: 2
 // Q/N 1.
@@ -172,6 +172,7 @@ let months = [
   "December",
 ];
 
+/*
 let month = prompt("Enter month: ");
 month = month.slice(0, 1).toUpperCase() + month.slice(1).toLowerCase();
 
@@ -186,3 +187,4 @@ let inputYear = parseInt(prompt("Enter year: "));
 inputYear.length = 3;
 let numberOfDays_1 = new Date(inputYear, numberOfMonth, 0).getDate();
 console.log(`${month} has ${numberOfDays_1} days`);
+*/

@@ -219,3 +219,70 @@ console.log(sentence_2.match(/because/gi).length);
 // };
 // console.log(mostWords(cleanSentence));
 // console.log(mostWords(elI));
+
+// Bonus
+let sentence_3 =
+  "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
+let cleanSentence = sentence_3
+  .toLowerCase()
+  .replace(/[^A-Za-z0-9,.?' ']/gim, "");
+console.log(cleanSentence);
+
+// let cleanSentence = sentence_3.replace(/[%@#+:&?$!,.]/g, "")
+
+let eachWord = cleanSentence.split(" ");
+
+let uniqueWords = [];
+for (let word of eachWord) {
+  if (!uniqueWords.includes(word)) {
+    uniqueWords.push(word);
+  }
+}
+console.log(uniqueWords);
+
+let wordCount = [];
+for (const word of uniqueWords) {
+  let count_1 = 0;
+  for (let i = 0; i < eachWord.length; i++) {
+    if (word === eachWord[i]) count_1++;
+  }
+  wordCount.push(count_1);
+}
+console.log(wordCount);
+
+let highestNumber = Math.max(...wordCount)
+console.log(wordCount.indexOf(highestNumber));
+
+
+// Pauline
+/*
+Remove the invalid characters using replace
+then split the words into an array at the spaces
+*/
+let cleaned = sentence.replace(/[$%@;&#!?]/gi, "").split(" ");
+console.log(cleaned);
+
+// declare empty array to hold the words
+let  arr = [];
+// declare variable for default count
+let count = 0;
+// declare variable for the word with the maximum count
+let maxWord = "";
+// loop over all the words in the array
+for (let word of cleaned) {
+    if ( arr[word]) {
+        // if a unique word is already in the array, increment it by 1
+         arr[word]++;
+        // when a word is found, check if it's greater than count
+        if (arr[word] > count) {
+            // if the word is larger, assign it as the word with the highest count
+            count =  arr[word];
+            // return the word that has the highest count
+            maxWord = word;
+        }
+    } else {
+      // if a unique word is not in the array, add it to the array
+       arr[word] = 1;
+  }
+}
+console.log(maxWord);
