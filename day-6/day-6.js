@@ -67,10 +67,10 @@ do {
 } while (j >= 0);
 
 // Q/N 3.
-let n = Math.floor(prompt('Enter number: '))
-for (let i = 0; i <= n; i++) {
-  console.log(i);
-}
+// let n = Math.floor(prompt('Enter number: '))
+// for (let i = 0; i <= n; i++) {
+//   console.log(i);
+// }
 
 // Q/N 4.
 let str = "";
@@ -107,8 +107,65 @@ for (i = 0; i <= 100; i++) {
   }
 }
 
+/* correct
 // Q/N 9.
 //print prime numbers
+// 1. function to check if a number is prime
+function isPrime(num) {
+  if (num < 2) return "It is not a prime number";
+  for (i = 2; i < num / 2; i++) {
+    if (!(num % i)) {
+      return "It is not a prime number"; // num % i === 0
+    }
+  }
+  return "It is a prime number";
+}
+console.log(isPrime(37));
+
+// 2. function that uses the prime number function to print the prime numbers.
+function primeNumList(val) {
+  // create a function to check if a number is prime.
+  let primeNums = [];
+  function isPrime(num) {
+    if (num < 2) return false;
+    for (i = 2; i < num / 2; i++) {
+      if (!(num % i)) {
+        return false; // num % i === 0
+      }
+    }
+    return true;
+  }
+  // console.log(isPrime(37));
+
+  // create a function that pushes all prime numbers in val into an array.
+  for (let i = 2; i < val; i++) {
+    if (isPrime(i)) {
+      primeNums.push(i);
+    }
+  }
+  console.log(primeNums);
+  return primeNums;
+}
+console.log(primeNumList(37));
+*/
+
+/* not correct yet
+function primeNumList(val) {
+  // create a function to check if a number is prime.
+  let primeNums = [];
+  if (val < 2) return false;
+  for (i = 2; i < val; i++) {
+    console.log(i);
+    if ((val % i)) {
+      primeNums.push(i);
+      // primeNums.push(val);
+    }
+  }
+  // console.log(primeNums);
+  return primeNums;
+}
+console.log(primeNumList(5));
+*/
 
 // Q/N 10.
 //sum of all numbers
@@ -498,3 +555,8 @@ let newCountriesArr = countries_6
   .map((country) => country.toUpperCase())
   .reverse();
 console.log(newCountriesArr);
+
+
+/**
+ * EXTRAS
+ */
